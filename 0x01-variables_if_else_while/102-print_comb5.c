@@ -1,5 +1,3 @@
-#include
-kjh
 #include <stdio.h>
 
 /**
