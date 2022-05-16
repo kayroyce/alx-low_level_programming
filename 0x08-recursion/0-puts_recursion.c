@@ -1,11 +1,20 @@
 #include "main.h"
+
 /**
- * main - check the code.
- *
- * Return: Always 0.
- */
-int main(void)
+  * _puts_recursion - Print a string followed by a new line
+  * @s: the string to print
+  *
+  * Return: Nothing.
+  */
+void _puts_recursion(char *s)
 {
-    _puts_recursion("Kolawole");
-    return (0);
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+
+	_putchar(*s);
+	s++;
+	_puts_recursion(s);
 }
