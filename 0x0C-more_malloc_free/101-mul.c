@@ -16,6 +16,7 @@ void nums_add(char *final_prod, char *next_prod, int next_len);
  *Return:string length
  *
  */
+
 int _strlen(char *s)
 {
 	int i;
@@ -24,12 +25,14 @@ int _strlen(char *s)
 		;
 	return (i);
 }
+
 /**
  *xarray - creates an array and initializes its value to x plus terminating
  *null byte
  *@size:size of array to be initialised
  *Return:pointer to array
  */
+
 char *xarray(int size)
 {
 	int i;
@@ -47,6 +50,7 @@ char *xarray(int size)
 	arr[i] = '\0';
 	return (arr);
 }
+
 /**
  *_zero_iteration - iterates thru a given no. of zeroes
  *
@@ -61,6 +65,7 @@ char *_zero_iteration(char *s)
 	}
 	return (s);
 }
+
 /**
  *convert_to_digit - converts digit character to int
  *
@@ -69,6 +74,7 @@ char *_zero_iteration(char *s)
  *Return:converted int
  *
  */
+
 int convert_to_digit(char s)
 {
 	int digit = s - '0';
@@ -80,6 +86,7 @@ int convert_to_digit(char s)
 	}
 	return (digit);
 }
+
 /**
  *_product - multiplies string of numbers by a single digit
  *
@@ -90,6 +97,7 @@ int convert_to_digit(char s)
  *
  *Return:void
  */
+
 void _product(char *prod, char *mul, int digit, int zeroes)
 {
 	int mul_len, num, tens = 0;
@@ -126,6 +134,7 @@ void _product(char *prod, char *mul, int digit, int zeroes)
 		*prod = (tens % 10) + '0';
 	}
 }
+
 /**
  *nums_add - adds numbers stored in two strings
  *
@@ -135,6 +144,7 @@ void _product(char *prod, char *mul, int digit, int zeroes)
  *
  *Return:void
  */
+
 void nums_add(char *final_prod, char *next_prod, int next_len)
 {
 	int num, tens;
@@ -171,6 +181,7 @@ void nums_add(char *final_prod, char *next_prod, int next_len)
 		*final_prod = (tens % 10) + '0';
 	}
 }
+
 /**
  *main - multiplies two positive numbers and prints the result
  *
@@ -178,6 +189,7 @@ void nums_add(char *final_prod, char *next_prod, int next_len)
  *@argv:arguement vector
  *Return:(0- success)
  */
+
 int main(int argc, char *argv[])
 {
 	char *final_prod, *next_prod;
