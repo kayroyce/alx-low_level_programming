@@ -1,9 +1,5 @@
 #include "main.h"
 
-/*
-* Auth: Gbemi Jacob Adebayo
-*/
-
 /**
  * rev_string - function that reverse array
  * @n: integer
