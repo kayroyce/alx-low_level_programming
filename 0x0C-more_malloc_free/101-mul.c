@@ -57,6 +57,7 @@ char *xarray(int size)
  *@s:string to be iterated
  *Return:pointer to next non-zero element
  */
+
 char *_zero_iteration(char *s)
 {
 	while (*s && *s == '0')
