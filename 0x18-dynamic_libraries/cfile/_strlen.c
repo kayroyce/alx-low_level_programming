@@ -1,9 +1,12 @@
+#include "main"
+
 /**
  * _strlen - function that returns the length of a string.
  * @s: string to check
  *
  * Return: Integer
  */
+
 int _strlen(char *s)
 {
 	int counter;
@@ -13,3 +16,4 @@ int _strlen(char *s)
 		counter++;
 
 	return (counter);
+}
