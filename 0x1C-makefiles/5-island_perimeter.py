@@ -7,10 +7,10 @@ def island_perimeter(grid):
 
     k = 0
     length = len(grid) - 1
-    width = len(grid) - 1
+    width = len(grid[0]) - 1
 
     for x, r in enumerate(grid):
-        for y, n in enumerate(grid):
+        for y, n in enumerate(r):
             if n == 1:
                 if x == 0 or grid[x - 1][y] != 1:
                     k += 1
